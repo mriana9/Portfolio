@@ -5,6 +5,11 @@ function showSetting (){
 }
 
 //Theme-Colors
+let themeColor = localStorage.getItem('theme-color');
+if(themeColor !== null){
+    console.log("not-empty",localStorage.getItem('theme-color'))
+    document.documentElement.style.setProperty('--primary-color', localStorage.getItem('theme-color'));
+}
 const colors = document.getElementsByClassName('colors');
 let i;
 for(i=0; i<colors.length; i++){
@@ -13,11 +18,6 @@ for(i=0; i<colors.length; i++){
 
 function changeColor(){
     let color = this.getAttribute('data-color');
+    localStorage.setItem('theme-color',color);
     document.documentElement.style.setProperty('--primary-color', color);
 }
-
-function getColorData(){
-    localStorage.getItem('theme-color');
-    console.log(localStorage.getItem('theme-color'));
-}
-
