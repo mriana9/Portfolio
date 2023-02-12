@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.setting {
+    width: 25vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;right: 0;
+    transition: 2s;
+    background-color: #fff;
+    transform: translateX(23vw);
+    box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+
+    &.active {
+        transform: translate(0);
+    }
+
+    .setting-icon {
+        padding: 10px;
+        width: 50px;
+        height: 50px;
+        font-size: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        color: #bfbfbf;
+        cursor: pointer;
+        position: absolute;
+        top: 50%; left: 0;
+        background-color: #fff;
+        transform: translate(-50%, -50%);
+        box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+    }
+}
