@@ -148,20 +148,18 @@
     }
 
     .theme-text {
-        .text {
-            cursor: pointer;
+        cursor: pointer;
 
-            #text1 {
-                font-family: 'Kanit';
-            }
+        #text1 {
+            font-family: 'Kanit', sans-serif;
+        }
 
-            #text2 {
-                font-family: 'Signika Negative';
-            }
+        #text2 {
+            font-family: 'Signika Negative', sans-serif;
+        }
 
-            #text3 {
-                font-family: 'Caveat';
-            }
+        #text3 {
+            font-family: 'Caveat', sans-serif;
         }
     }
 }

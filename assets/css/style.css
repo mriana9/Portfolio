@@ -162,20 +162,20 @@
   background-color: #ABD9FF;
 }
 
-.setting .theme-text .text {
+.setting .theme-text {
   cursor: pointer;
 }
 
-.setting .theme-text .text #text1 {
-  font-family: 'Kanit';
+.setting .theme-text #text1 {
+  font-family: 'Kanit', sans-serif;
 }
 
-.setting .theme-text .text #text2 {
-  font-family: 'Signika Negative';
+.setting .theme-text #text2 {
+  font-family: 'Signika Negative', sans-serif;
 }
 
-.setting .theme-text .text #text3 {
-  font-family: 'Caveat';
+.setting .theme-text #text3 {
+  font-family: 'Caveat', sans-serif;
 }
 
 .about-me {
