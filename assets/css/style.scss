@@ -19,7 +19,7 @@
     border-radius: 5px;
     background-color: #fff;
 }
-  
+
 ::-webkit-scrollbar-thumb {
     background-color: var(--primary-color);
 }
@@ -306,10 +306,11 @@ footer {
 
         ul {
             display: flex;
+
             li {
                 list-style: none;
                 margin: 5px 10px;
-                
+
                 a {
                     text-decoration: none;
                 }
@@ -319,7 +320,23 @@ footer {
 }
 
 @media (max-width: 768px) {
-    section, footer {
-        display: none;
+    .about-me {
+        .container {
+            .title {
+                font-size: 34px;
+            }
+        }
+    }
+
+    .my-services {
+        .container {
+            .service-box {
+                padding-left: 0;
+
+                .service-title {
+                    padding-left: 0;
+                }
+            }
+        }
     }
 }
