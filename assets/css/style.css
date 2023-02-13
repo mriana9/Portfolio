@@ -257,7 +257,7 @@
 }
 
 .my-services {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .my-services .container {
@@ -322,8 +322,41 @@
   color: var(--primary-color);
 }
 
+footer {
+  padding-top: 20px;
+  margin-top: 20px;
+  background-color: var(--primary-color);
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .container ul li {
+  list-style: none;
+  margin: 5px 10px;
+}
+
+footer .container ul li a {
+  text-decoration: none;
+}
+
 @media (max-width: 768px) {
-  section {
+  section, footer {
     display: none;
   }
 }
