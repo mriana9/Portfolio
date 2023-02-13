@@ -356,8 +356,14 @@ footer .container ul li a {
 }
 
 @media (max-width: 768px) {
-  section, footer {
-    display: none;
+  .about-me .container .title {
+    font-size: 34px;
+  }
+  .my-services .container .service-box {
+    padding-left: 0;
+  }
+  .my-services .container .service-box .service-title {
+    padding-left: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
