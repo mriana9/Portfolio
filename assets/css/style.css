@@ -14,11 +14,14 @@
   height: 100vh;
   padding: 20px;
   position: fixed;
+  z-index: 99;
   top: 0;
   right: 0;
   -webkit-transition: 2s;
   transition: 2s;
   background-color: #fff;
+  -webkit-transform: translateX(23vw);
+          transform: translateX(23vw);
   -webkit-box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
           box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
 }
@@ -60,7 +63,7 @@
 
 .setting .theme-title {
   font-size: 18px;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .setting .theme-color {
@@ -145,15 +148,77 @@
   background-color: #ABD9FF;
 }
 
+.about-me {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-me .about-me-top-svg {
+  position: absolute;
+  opacity: 0.5;
+  width: 460px;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.about-me .about-me-top-bg-svg {
+  position: absolute;
+  opacity: 0.8;
+  width: 480px;
+  z-index: 1;
+  top: 0;
+  left: 20px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.about-me .container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-me .container .title {
+  font-size: 66px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.about-me .container .title::first-line {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.about-me .container .description {
+  text-transform: capitalize;
+  color: #4c555d;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.about-me .container .description span {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
 @media (max-width: 768px) {
-  .setting {
-    height: 100vh;
-    width: 25vw;
-    z-index: 8;
-    overflow-y: scroll;
-  }
-  .setting .setting-icon {
-    z-index: 9;
+  section {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
