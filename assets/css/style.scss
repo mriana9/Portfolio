@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,300;0,400;0,600;1,100;1,300;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +9,9 @@
 }
 
 :root {
-    --primary-color:#645CBB;
+    --primary-color: #645CBB;
+    --primary-text: sans-serif;
+
 }
 
 .setting {
@@ -14,7 +20,8 @@
     padding: 20px;
     position: fixed;
     z-index: 99;
-    top: 0;right: 0;
+    top: 0;
+    right: 0;
     transition: 2s;
     background-color: #fff;
     transform: translateX(23vw);
@@ -39,7 +46,8 @@
         color: var(--primary-color);
         cursor: pointer;
         position: absolute;
-        top: 50%; left: 0;
+        top: 50%;
+        left: 0;
         background-color: #fff;
         transform: translate(-50%, -50%);
         box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
@@ -50,13 +58,13 @@
         padding-top: 10px;
     }
 
-    .theme-color{
+    .theme-color {
         display: flex;
         list-style: none;
         flex-wrap: wrap;
         padding: 0;
 
-        .colors{
+        .colors {
             width: 50px;
             height: 50px;
             cursor: pointer;
@@ -64,53 +72,86 @@
             border: 1.5px solid var(--white-color);
         }
 
-        #color1{
+        #color1 {
             background-color: #645CBB;
         }
-        #color2{
+
+        #color2 {
             background-color: #B3005E;
         }
-        #color3{
-            background-color:#F2CD5C;
+
+        #color3 {
+            background-color: #F2CD5C;
         }
-        #color4{
-            background-color:#939B62;
+
+        #color4 {
+            background-color: #939B62;
         }
-        #color5{
-            background-color:#4c555d;
+
+        #color5 {
+            background-color: #4c555d;
         }
-        #color6{
-            background-color:#439A97;
+
+        #color6 {
+            background-color: #439A97;
         }
-        #color7{
-            background-color:#815B5B;
+
+        #color7 {
+            background-color: #815B5B;
         }
-        #color8{
-            background-color:#25316D;
+
+        #color8 {
+            background-color: #25316D;
         }
-        #color9{
+
+        #color9 {
             background-color: #AAE3E2;
         }
-        #color10{
+
+        #color10 {
             background-color: #7286D3;
         }
-        #color11{
+
+        #color11 {
             background-color: #BAABDA;
         }
-        #color12{
+
+        #color12 {
             background-color: #CDE990;
         }
-        #color13{
-            background-color:#FD8A8A;
+
+        #color13 {
+            background-color: #FD8A8A;
         }
-        #color14{
-            background-color:#F0E161;
+
+        #color14 {
+            background-color: #F0E161;
         }
-        #color15{
-            background-color:#C3B091;
+
+        #color15 {
+            background-color: #C3B091;
         }
-        #color16{
-            background-color:#ABD9FF;
+
+        #color16 {
+            background-color: #ABD9FF;
+        }
+    }
+
+    .theme-text {
+        .text {
+            cursor: pointer;
+
+            #text1 {
+                font-family: 'Kanit', sans-serif;
+            }
+
+            #text2 {
+                font-family: 'Signika Negative', sans-serif;
+            }
+
+            #text3 {
+                font-family: 'Caveat', sans-serif;
+            }
         }
     }
 }
@@ -126,7 +167,8 @@
         opacity: 0.5;
         width: 460px;
         z-index: 3;
-        top: 0;left: 0;
+        top: 0;
+        left: 0;
         transform: translate(-50%, -50%);
     }
 
@@ -135,7 +177,8 @@
         opacity: 0.8;
         width: 480px;
         z-index: 1;
-        top: 0;left: 20px;
+        top: 0;
+        left: 20px;
         transform: translate(-50%, -50%);
     }
 
@@ -150,11 +193,9 @@
             font-size: 66px;
             text-align: center;
             text-transform: capitalize;
-
-            &::first-line {
-                font-weight: bold;
-                color: var(--primary-color);
-            }
+            font-family: var(--primary-text);
+            font-weight: bold;
+            color: var(--primary-color);
         }
 
         .description {
@@ -166,13 +207,14 @@
             span {
                 font-weight: bold;
                 color: var(--primary-color);
+                font-family: var(--primary-text);
             }
         }
     }
 }
 
 @media (max-width: 768px) {
-   section {
+    section {
         display: none;
-   }
+    }
 }

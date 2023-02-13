@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,300;0,400;0,600;1,100;1,300;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +9,8 @@
 }
 
 :root {
-  --primary-color:#645CBB;
+  --primary-color: #645CBB;
+  --primary-text: sans-serif;
 }
 
 .setting {
@@ -148,6 +152,22 @@
   background-color: #ABD9FF;
 }
 
+.setting .theme-text .text {
+  cursor: pointer;
+}
+
+.setting .theme-text .text #text1 {
+  font-family: 'Kanit', sans-serif;
+}
+
+.setting .theme-text .text #text2 {
+  font-family: 'Signika Negative', sans-serif;
+}
+
+.setting .theme-text .text #text3 {
+  font-family: 'Caveat', sans-serif;
+}
+
 .about-me {
   height: 100vh;
   position: relative;
@@ -197,9 +217,7 @@
   font-size: 66px;
   text-align: center;
   text-transform: capitalize;
-}
-
-.about-me .container .title::first-line {
+  font-family: var(--primary-text);
   font-weight: bold;
   color: var(--primary-color);
 }
@@ -214,6 +232,7 @@
 .about-me .container .description span {
   font-weight: bold;
   color: var(--primary-color);
+  font-family: var(--primary-text);
 }
 
 @media (max-width: 768px) {
